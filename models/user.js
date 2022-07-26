@@ -1,7 +1,6 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
+const { hashingPassword } = require('../helpers/bcrypt')
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -11,17 +10,68 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      User.hasMany(models.Movie, { foreignKey: "UserId"})
+      User.hasMany(models.Movie, { foreignKey: "UserId" });
     }
   }
-  User.init({
-    username: DataTypes.STRING,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    role: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'User',
-  });
+  User.init(
+    {
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            args: true,
+            msg: "Username cannot be empty"
+          },
+          notNull: {
+            args: true,
+            msg: "Username can not be null"
+          }
+        }
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          isEmail: {
+            args: true,
+            msg: "Format email is invalid"
+          },
+          notEmpty: {
+            args: true,
+            msg: "Email cannot be empty"
+          },
+          notNull: {
+            args: true,
+            msg: "Email can not be null"
+          }
+        }
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            args: true,
+            msg: "Password cannot be empty"
+          },
+          notNull: {
+            args: true,
+            msg: "Password can not be null"
+          }
+        }
+      },
+      role: DataTypes.STRING,
+    },
+    {
+      sequelize,
+      modelName: "User",
+      hooks: {
+        beforeCreate: (user) => {
+          user.password = hashingPassword(user.password)
+        }
+      }
+    }
+  );
   return User;
 };
