@@ -6,6 +6,60 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4c/Lost_in_Translation_poster.jpg",
         "rating": 77,
         "UserId": 1,
-        "status": "Released"
-    }
+        "status": "released"
+    },
+    {
+        "title" : "Harry Potter and the Philosophers Stone",
+        "synopsis" : "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=VyHV0BRtdxo&t=29s",
+        "imageUrl" : "https://images.moviesanywhere.com/143cdb987186a1c8f94d4f18de211216/fdea56fa-2703-47c1-8da8-70fc5382e1ea.webp?h=375&resize=fit&w=250",
+        "rating" : 7,
+        "UserId": 1,
+        "status" : "released"
+      },
+      {
+        "title" : "Spider-Man: No Way Home",
+        "synopsis" : "With Spider-Mans identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+        "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gtkT-0szxfjxzUwjaLiJKIuCzpLgsA6lvA&usqp=CAU",
+        "rating" : 8,
+        "UserId": 1,
+        "status" : "released"
+      },
+      {
+        "title" : "The Batman",
+        "synopsis" : "Batman ventures into Gotham Citys underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrators plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=NLOp_6uPccQ",
+        "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAWSwiwFcAZFS8eE-MH_-NbYHIo06wO07nkg&usqp=CAU",
+        "rating" : 8,
+        "UserId": 1,
+        "status" : "released"
+      },
+      {
+        "title" : "Zack Snyders Justice League",
+        "synopsis" : "Bruce Wayne and Diana Prince try to bring the metahumans of Earth together after the death of Clark Kent. Meanwhile, Darkseid sends Steppenwolf to Earth with a vast army to subjugate humans.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=ui37YKQ9AC4",
+        "imageUrl" : "https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_QL75_UX190_CR0,0,190,281_.jpg",
+        "rating" : 9,
+        "UserId": 1,
+        "status" : "released"
+      },
+      {
+        "title" : "Joker",
+        "synopsis" : "Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=t433PEQGErc",
+        "imageUrl" : "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/joker_key_art.jpg",
+        "rating" : 10,
+        "UserId": 1,
+        "status" : "released"
+      },
+      {
+        "title" : "Passengers",
+        "synopsis" : "During a voyage to a distant colony planet, Jims hypersleep pod malfunctions, waking him up. He and fellow passenger Aurora must work together to prevent their spaceship from meeting with a disaster.",
+        "trailerUrl" : "https://www.youtube.com/watch?v=7BWWWQzTpNU",
+        "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVLmkLw8BK0w-aB17ILov9lb4HonXItz1sQ&usqp=CAU",
+        "rating" : 4,
+        "UserId": 1,
+        "status" : "released"
+      }
 ]
