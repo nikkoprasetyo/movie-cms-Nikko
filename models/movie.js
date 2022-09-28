@@ -26,7 +26,8 @@ module.exports = (sequelize, DataTypes) => {
     imageUrl: DataTypes.TEXT,
     rating: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER,
-    status: DataTypes.STRING
+    status: DataTypes.STRING,
+    isDeleted: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Movie',
